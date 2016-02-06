@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>angularjs module snippets</Title>
+      <Author>oscar garcia @ozkary</Author>
+      <Description>
+	       Provides a consistent angularjs module block with project header
+      </Description>
+      <HelpUrl>
+        http://www.ozkary.com/2016/02/angularjs-visual-studio-code-snippets.html
+      </HelpUrl>
+      <Shortcut>AngularJS Module with Header</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="javascript">
+        <![CDATA[
+/*!
+ * Copyright 2016 ozkary.com
+ * http://ozkary.com/ by Oscar Garcia
+ * Licensed under the MIT license. Please see LICENSE for more information.
+ *
+ * $ProjectName$
+ * $ProjectDescription$
+ * $ProjectUrl$
+ * ver. $Version$
+ *
+ * Created By $Author$ $Date$
+ *
+ * Update/Fix History
+ * $Author$ $Date$ initial implementation
+ *
+ *
+ */
+
+(function () {
+    'use strict';
+
+    var app = angular.module('$AppName$', []);  
+    app.run([runtApp]); 
+	
+	function runApp(){
+	
+	}
+   
+})();
+      ]]></Code>
+      <Declarations>
+        <Literal>
+          <ID>ProjectName</ID>
+          <ToolTip>Replace with your project name i.e. ozkary.com</ToolTip>
+          <Default>my project</Default>
+        </Literal>
+        <Literal>
+          <ID>ProjectDescription</ID>
+          <ToolTip>Replace with a descrition i.e. handles blog entries</ToolTip>
+          <Default>check this out!</Default>
+        </Literal>
+        <Literal>
+          <ID>ProjectUrl</ID>
+          <ToolTip>Replace with your domain name if available.</ToolTip>
+          <Default>ozkary.com</Default>
+        </Literal>
+        <Literal>
+          <ID>AppName</ID>
+          <ToolTip>Replace with your module name i.e. app.</ToolTip>
+          <Default>app</Default>
+        </Literal>
+        <Literal>
+          <ID>Version</ID>
+          <ToolTip>Replace with your product version i.e. 1.0.0</ToolTip>
+          <Default>1.0.0</Default>
+        </Literal>
+        <Literal>
+          <ID>Author</ID>
+          <ToolTip>Replace with your name</ToolTip>
+          <Default>myName</Default>
+        </Literal>
+        <Literal>
+          <ID>Date</ID>
+          <ToolTip>Replace with the current date</ToolTip>
+          <Default>today</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+
+  </CodeSnippet>
+</CodeSnippets>
